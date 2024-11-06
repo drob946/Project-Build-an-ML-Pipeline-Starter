@@ -40,8 +40,8 @@ def go(config: DictConfig):
             _ = mlflow.run(
                 f"{config['main']['components_repository']}/get_data",
                 "main",
-                version='main',
-                env_manager="conda",
+                #version='main',
+                #env_manager="conda",
                 parameters={
                     "sample": config["etl"]["sample"],
                     "artifact_name": "sample.csv",
